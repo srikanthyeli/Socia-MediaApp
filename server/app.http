@@ -1,0 +1,39 @@
+POST http://localhost:3002/register/
+Content-Type: application/json 
+
+{
+    "Email":"sri@gmail",
+    "UserName":"prasu",
+    "Password":"123456789"
+}
+
+###
+POST http://localhost:3002/login/
+Content-Type: application/json
+
+{
+    "UserName":"prasu",
+    "Password":"123456789"
+}
+
+###
+GET http://localhost:3002/getUser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InByYXN1IiwiaWF0IjoxNzIzMjY5OTgyfQ.UuyNfSB-E9BMvyKJavvZaPXsVpHkEhobOyS8agI765w
+
+###
+PUT http://localhost:3002/edit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InByYXN1IiwiaWF0IjoxNzIzMjY5OTgyfQ.UuyNfSB-E9BMvyKJavvZaPXsVpHkEhobOyS8agI765w
+
+{
+    "Id":1,
+    "UserName":"Anand",
+    "Email":"Aand@gmail.com"
+}
+
+###
+DELETE http://localhost:3002/deleteUser/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InByYXN1IiwiaWF0IjoxNzIzMjY5OTgyfQ.UuyNfSB-E9BMvyKJavvZaPXsVpHkEhobOyS8agI765w
+
