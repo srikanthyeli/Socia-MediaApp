@@ -36,9 +36,52 @@
 ### 7. **Authentication**
 
 - **Dummy Login Page**: Create a simple login page with email and password fields. This can be a standalone component that routes to the main dashboard upon successful login with any credentials.
+- **Your backend is already mostly implemented. Below are the required APIs:**
+
+-POST /register: Handles user registration with password hashing.
+-POST /login: Authenticates the user and returns a JWT token.
+-GET /getUser: Fetches all users (protected route).
+-PUT /edit: Edits user details (protected route).
+-DELETE /deleteUser/:id: Deletes a user by ID (protected route).
 
 ### 8. **State Management**
 
 - **State Management**: Use React's `useState` and `useEffect` hooks to manage the state of the application. Optionally, consider using a state management library like Redux for better state handling, especially if the application scales.
 
-### 9.Git hub link 
+### Overview
+This project is an admin dashboard built with React.js and Express.js. It allows administrators to manage users and posts with various controls.
+## Features
+- User Registration and Login
+- JWT Authentication
+- User and Post Management (CRUD operations)
+- KPI Display (Total Users, Total Posts, etc.)
+- Pagination and Navigation
+
+## Tech Stack
+- Frontend: React.js, Vite
+- Backend: Node.js, Express.js
+- Database: MySQL
+- Authentication: JWT
+
+## Setup
+
+### Prerequisites
+- Node.js
+- MySQL
+
+### Installation
+1. Clone the repository.
+2. Navigate to the project directory.
+
+### bash commands
+-cd my-react-dashboard
+-Install frontend dependencies.
+-npm install
+--Navigate to the backend directory and install backend dependencies.
+
+-cd server
+-npm install
+-Start the backend server.
+-node index.js
+-Start the frontend server.
+### Access the dashboard at http://localhost:5173.
